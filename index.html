@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopIndo Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PopIndo Game</h1>
+    </header>
+    <main>
+        <div id="province-selection">
+            <h2>Pilih Provinsi Anda</h2>
+            <select id="province-dropdown">
+                <option value="">Pilih Provinsi</option>
+                <!-- Opsi provinsi akan diisi melalui JavaScript -->
+            </select>
+            <button id="start-game">Mulai Game</button>
+        </div>
+        <div id="game-container" style="display: none;">
+            <div id="click-area">
+                <img src="image1.jpg" alt="PopIndo" id="pop-image">
+            </div>
+            <div id="score">Skor: <span id="score-value">0</span></div>
+        </div>
+        <div id="leaderboard">
+            <h2>Peringkat Provinsi</h2>
+            <ol id="top-provinces">
+                <!-- Peringkat akan diisi melalui JavaScript -->
+            </ol>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

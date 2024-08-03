@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#province-selection {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#province-dropdown {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+#start-game {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#click-area {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#pop-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#score {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#leaderboard {
+    margin-top: 2rem;
+}
+
+#top-provinces {
+    list-style-type: none;
+    padding: 0;
+}
+
+#top-provinces li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#top-provinces li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#top-provinces li:nth-child(1)::before {
+    background-image: url('gold-medal.png');
+}
+
+#top-provinces li:nth-child(2)::before {
+    background-image: url('silver-medal.png');
+}
+
+#top-provinces li:nth-child(3)::before {
+    background-image: url('bronze-medal.png');
+}
